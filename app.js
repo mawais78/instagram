@@ -4,6 +4,10 @@ const app = express()
 require('ts-node/register');
 
 app.get('/', async (req, res) => {
+  res.send('App is working...');
+})
+
+app.get('/upload', async (req, res) => {
 
   console.log('Starting...');
   const { main } = require('./examples/upload-photo.example.ts');
