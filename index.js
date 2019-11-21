@@ -17,4 +17,6 @@ app.get('/upload', async (req, res) => {
   res.send('Done....');
 })
  
-app.listen(8080)
+let port = process.env.PORT || 3000;
+
+app.listen(port);
